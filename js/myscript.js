@@ -63,7 +63,7 @@
 	}));
 
 
-	//---------- Email Validation
+	//---------- Contact Email Validation			(Contact Section)
 
 	function validate(){
 		const form = document.getElementById('form');
@@ -137,7 +137,7 @@
 
 			if(!$(this).is(':last-child')){
 
-				$(this).delay(3000).fadeOut(1000, function(){
+				$(this).delay(7000).fadeOut(1000, function(){
 
 					$(this).removeClass('slidactivate').next().addClass('slidactivate').fadeIn();
 					
@@ -145,7 +145,7 @@
 				})
 
 			}else{
-				$(this).delay(3000).fadeOut(1000, function(){
+				$(this).delay(7000).fadeOut(1000, function(){
 
 					$(this).removeClass('slidactivate');
 
