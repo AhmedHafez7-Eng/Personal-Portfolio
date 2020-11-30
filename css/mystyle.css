@@ -5,6 +5,9 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
@@ -107,6 +110,7 @@ header .logo{
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 2px;
+	outline: 0;
 }
 header.sticky .logo{
 	color: #111;
@@ -150,6 +154,9 @@ header.sticky ul li.activeColor a{
 /*End NavBar*/
 
 /*Start About*/
+.about .heading h2{
+	margin-bottom: 40px;
+}
 .content{
 	display: flex;
 	justify-content: space-between;
@@ -170,7 +177,7 @@ header.sticky ul li.activeColor a{
 	display: none;
 }
 #readMoreBtn{
-	margin-top: 30px;
+	margin-top: 20px;
 }
 .w50{
 	min-width: 50%;
@@ -179,7 +186,7 @@ header.sticky ul li.activeColor a{
 	max-width: 100%;
 }
 .downloadCv{
-	margin-top: 50px;
+	margin-top: 60px;
 }
 /*End About*/
 
@@ -230,12 +237,14 @@ header.sticky ul li.activeColor a{
 	flex-wrap: wrap;
 }
 .work .content .workBx{
-	width: 50%;
-	padding: 20px;
-	cursor: pointer;
+	width: 48%;
+	margin-right: 2%;
+	margin-bottom: 30px;
 }
 .work .content .workBx img{
 	max-width: 100%;
+	cursor: pointer;
+	box-shadow: 0 0 5px #2196f3, 0 0 10px #2196f3;
 }
 .work .content .workBx.poppa{
 	position: fixed;
@@ -330,7 +339,7 @@ header.sticky ul li.activeColor a{
 	width: 100%;
 	padding: 30px 20px;
 	margin: 20px;
-	background: #2196f3;
+	background: rgba(33,150,243,0.9);
 	position: relative;
 }
 /*.cardboxshadow{
@@ -341,11 +350,12 @@ header.sticky ul li.activeColor a{
 	height: 90px;
 	border-radius: 50%;
 	margin-bottom: 30px;
-	margin-left: 43%;
+	margin-left: 44%;
+	box-shadow: 0 0 5px #CCC, 0 0 15px #CCC;
 }
 .testim .content .testimBx p{
 	color: #FFF;
-	font-size: 16px;
+	font-size: 17px;
 	font-style: italic;
 	font-weight: 300;
 	text-align: center;
@@ -527,14 +537,7 @@ form.invalid .indicator{
 }
 /*End Footer*/
 
-/*Start Dark Mode*/
-/*header .menu .dark-light{
-	display: inline-block;
-	cursor: pointer;
-	color: #2196f3;
-	background-color: none;
-	border: 0;
-}*/
+/*Start Buttons*/
 .dark-light {
     padding: 7px;
     width: 45px;
@@ -564,9 +567,7 @@ form.invalid .indicator{
 .changeBack{
 	background-color: #000;
 }
-/*End Dark Mode*/
 
-/*Start To Top Button*/
 #toTop {
     padding: 7px;
     width: 45px;
@@ -595,7 +596,7 @@ form.invalid .indicator{
 	transition: all .3s ease-in-out;
 	opacity: 1;
 }
-/*End To Top Button*/
+/*End Buttons*/
 
 /*Start Working on Responsive*/
 @media (max-width: 991px){
@@ -685,7 +686,7 @@ form.invalid .indicator{
 	}
 	.work .content .workBx{
 		width: 100%;
-		padding: 10px;
+		/*padding: 10px;*/
 	}
 	.work .content .workBx.poppa img{
 		top: 60px;
@@ -725,7 +726,7 @@ form.invalid .indicator{
 		height: 90px;
 		border-radius: 50%;
 		margin-bottom: 30px;
-		margin-left: 40%;
+		margin-left: 44%;
 }
 	.contactInfo{
 		margin: 20px 0;
@@ -743,13 +744,13 @@ form.invalid .indicator{
 		padding: 100px 20px;
 	}
 	.testim .content .testimBx img{
-		margin-left: 35%;
+		margin-left: 39%;
 	}
 	.testim .content .testimBx h3{
 		margin-top: 12%;
 		font-size: 18px;
 		line-height: 1.5;
-		margin-top: 50px;
+		/*margin-top: 50px;*/
 		text-align: center;
 	}
 	.testim .content .testimBx p{
