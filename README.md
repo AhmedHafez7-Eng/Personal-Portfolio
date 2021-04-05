@@ -1,2 +1,2 @@
 # Personal-Portfolio
-Responsive Portfolio layout using HTML, CSS, JavaScript and jQuery which explains Work experience, Skills and Testimonials.
+Responsive Simple Portfolio layout using HTML, CSS, CSS Flex-Box,  JavaScript and jQuery plugins which explains Work experience, Skills and Testimonials.
